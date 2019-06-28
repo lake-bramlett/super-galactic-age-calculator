@@ -3,12 +3,12 @@ export class Person {
     this.dob = dob;
     this.gender = gender;
     this.country = country;
-    this.age = 0
+    this.age = 0;
   };
 
-    getAge() {
-      const today = new Date();
-      const userDOB = new Date(this.dob);
-      this.age.earth = today.getYear() - userDOB.getYear();
-    };
+  getAge() {
+    const today = new Date();
+    const userDOB = new Date(this.dob);
+    this.age = today.getYear() - userDOB.getYear();
+  };
 }

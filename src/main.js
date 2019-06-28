@@ -1,4 +1,4 @@
-import { User } from './age-calc.js';
+import { Person } from './age-calc.js';
 import $ from 'jquery';
 
 $(document).ready(function () {
@@ -9,6 +9,8 @@ $(document).ready(function () {
     const gender = $('.gender-select').val();
     const country = $('.country-select').val();
     let user = new Person (dateOfBirth, gender, country);
+    user.getAge();
+    $('.output').text(user.age);
   });
 
 });
