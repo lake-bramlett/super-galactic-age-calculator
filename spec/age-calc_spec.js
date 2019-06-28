@@ -45,4 +45,10 @@ describe('Person', function() {
     testUser.getLifeExpectancy();
     expect(testUser.yearsRemaining).toEqual(46);
   });
+  it("user's years surpassed if age is greater than life expectancy", function() {
+    const testUser = new Person('June 4, 1989','Mercury','Male','USA');
+    testUser.getAge();
+    testUser.getLifeExpectancy();
+    expect(testUser.yearsOver).toEqual(49);
+  });
 });
