@@ -16,8 +16,12 @@ export class Person {
         this.age = Math.floor(userAge / .24)
       } else if (this.planet === 'Venus') {
         this.age = Math.floor(userAge / .62)
+      } else if (this.planet === 'Mars') {
+        this.age = Math.floor(userAge / 1.88)
+      } else if (this.plabet === 'Jupiter') {
+        this.age = Math.floor(userAge / 11.86)
       } else {
-        this.age = userAge;
+        this.age = userAge
       }
   };
 

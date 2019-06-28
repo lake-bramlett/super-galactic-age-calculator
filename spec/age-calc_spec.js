@@ -17,4 +17,14 @@ describe('Person', function() {
     testUser.getAge();
     expect(testUser.age).toEqual(48);
   });
+  it('should return user age in Mars years', function() {
+    const testUser = new Person('June 4, 1989','Mars');
+    testUser.getAge();
+    expect(testUser.age).toEqual(15);
+  });
+  // it('should return user age in Mars years', function() {
+  //   const testUser = new Person('June 4, 1989','Jupiter');
+  //   testUser.getAge();
+  //   expect(testUser.age).toEqual(2);
+  // });
 });
