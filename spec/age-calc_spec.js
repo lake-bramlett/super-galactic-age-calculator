@@ -30,6 +30,19 @@ describe('Person', function() {
   it("should return user's remaining years left to live in Earth years", function() {
     const testUser = new Person('June 4, 1989','Earth','Male','USA');
     testUser.getAge();
-    expect(testUser.getLifeExpectancy()).toEqual(46);
+    testUser.getLifeExpectancy();
+    expect(testUser.expectancy - testUser.age).toEqual(46);
+  });
+  it("should return user's remaining years left to live on any planet and from any country", function() {
+    const testUser = new Person('June 4, 1989','Jupiter','Female','France');
+    testUser.getAge();
+    testUser.getLifeExpectancy();
+    expect(testUser.expectancy - testUser.age).toEqual(83);
+  });
+  it("should return user'suser's remaining years left to live the planet of their choosing", function() {
+    const testUser = new Person('June 4, 1989','Earth','Male','USA');
+    testUser.getAge();
+    testUser.getLifeExpectancy();
+    expect(testUser.yearsRemaining).toEqual(46);
   });
 });

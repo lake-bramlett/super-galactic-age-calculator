@@ -6,6 +6,8 @@ export class Person {
     this.country = country;
     this.age = 0;
     this.expectancy = 0;
+    this.yearsRemaining = 0;
+    this.yearsOver = 0;
   };
 
   getAge() {
@@ -100,7 +102,25 @@ export class Person {
         this.expectancy = 71
       }
     }
-    return this.expectancy - this.age
+
+    if (this.age < this.expectancy) {
+      this.yearsOver = 0;
+      this.yearsRemaining = (this.expectancy - this.age);
+    } else if (this.age > this.expectancy) {
+      this.yearsRemaining = 0;
+      this.yearsOver = (this.age - this.expectancy);
+    } else {
+      this.yearsRemaining = 0;
+      this.yearsOver = 0;
+    }
+  }
+
+  expectancyOverUnder() {
+    if (this.yearsRemaining >= this.yearsOver) {
+      return true
+    } else {
+      return false
+    }
   }
 
 }
