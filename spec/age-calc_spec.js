@@ -27,4 +27,9 @@ describe('Person', function() {
     testUser.getAge();
     expect(testUser.age).toEqual(2);
   });
+  it("should return user's remaining years left to live in Earth years", function() {
+    const testUser = new Person('June 4, 1989','Earth','Male','USA');
+    testUser.getAge();
+    expect(testUser.getLifeExpectancy()).toEqual(46);
+  });
 });

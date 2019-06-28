@@ -14,9 +14,9 @@
   | Returns user age in Venus years | DoB: June 4th, 1989 | Age: 48 |
   | Returns user age in Mars years | DoB: June 4th, 1989 | Age: 15 |
   | Returns user age in Jupiter years | DoB: June 4th, 1989 | Age: 2 |
-  | Return user's remaining years left to live in Earth years | DoB: June 4th, 1989; Gender: Male; Country: USA; Planet: Earth | Years remaining: 49 years |
+  | Return user's remaining years left to live in Earth years | DoB: June 4th, 1989; Gender: Male; Country: USA; Planet: Earth | Years remaining: 46 years |
   | Return user's remaining years left to live on any planet from any country | DoB: June 4th, 1989; Gender: Female; Country: France; Planet: Jupiter | Years remaining: 85 years |
-  | Return user's years surpassed if age is greater than life expectancy | DoB: June 4th, 1989; Gender: Male; Country: USA; Planet: Mercury | Years over life expectancy: 49 | 
+  | Return user's years surpassed if age is greater than life expectancy | DoB: June 4th, 1989; Gender: Male; Country: USA; Planet: Mercury | Years over life expectancy: 49 |
 
 3. Integration
   * Write spec tests
