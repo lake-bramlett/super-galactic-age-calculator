@@ -13,7 +13,9 @@ export class Person {
     const userAge = today.getYear() - userDOB.getYear();
 
     if(this.planet === 'Mercury') {
-        this.age = (userAge / .24)
+        this.age = Math.floor(userAge / .24)
+      } else if (this.planet === 'Venus') {
+        this.age = Math.floor(userAge / .62)
       } else {
         this.age = userAge;
       }

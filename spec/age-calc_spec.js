@@ -12,4 +12,9 @@ describe('Person', function() {
     testUser.getAge();
     expect(testUser.age).toEqual(125);
   });
+  it('should return user age in Venus years', function() {
+    const testUser = new Person('June 4, 1989','Venus');
+    testUser.getAge();
+    expect(testUser.age).toEqual(48);
+  });
 });
