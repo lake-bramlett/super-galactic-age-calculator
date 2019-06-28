@@ -1,12 +1,24 @@
-## Planning
+# _Super Galactic Age Calculator_
 
-1. Configuration/dependencies
-  * Setup NPM dependencies
-  * Configure Webpack
-  * Configure Karma
-  * Configure ESLinter
+#### _Week 5 Code Review, 28 June 2019_
 
-2. Specs
+#### By _**Lake Bramlett**_
+
+## Description
+
+_'Super Galactic Age Calculator' is a client-side program that determines the user's age based on their date of birth and then converts it to relative years based on which planet the user would be on. Furthermore, life expectancy is determined based on gender and country of origin and calculates whether the user is under, has met, or has exceeded that life expectancy._
+
+## Setup/Installation Requirements
+
+* _Clone https://github.com/lake-bramlett/super-galactic-age-calculator repo locally_
+* _In the command line, run `npm install` for necessary dependencies_
+* _Run `npm build` (or whatever local equivalent) to compile code and build to /dist_
+* _Open /dist/index.html in preferred web browser_
+* _Use preferred text editor to edit_
+* _Make any pull requests to https://github.com/lake-bramlett/super-galactic-age-calculator ._
+
+## Specs
+
   | Spec | Input | Output |
   | ---- | :---: | -----: |
   | Returns user age in Earth Years | DoB: June 4th, 1989 | Age: 30 |
@@ -19,16 +31,29 @@
   | Return user's years surpassed if age is greater than life expectancy | DoB: June 4th, 1989; Gender: Male; Country: USA; Planet: Mercury | Years over life expectancy: 49 |
   | Returns error message if user enters a future date and/or hasn't been born yet | DoB: June 4th, 2989 | "Nice try future person! You haven't been born yet! Try again in 970 years!" |
 
-3. Integration
-  * Write spec tests
-  * Create backend logic
-  * Integrate backend logic with frontend logic  
+  ## Known Bugs
 
-4. UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style
+  _There are no known bugs at this time (28 June 2019)._
 
-5. Polish
-  * Refactor any necessary code
-  * Delete unused code/variable
-  * Flesh out README
+  ## Support and contact details
+
+  _email: lake.bramlett@gmail.com_
+
+  ## Technologies Used
+
+  * _HTML_
+  * _CSS_
+  * _JavaScript_
+  * _jQuery_
+  * _Git_
+  * _NPM_
+  * _Webpack_
+  * _Jasmine_
+  * _Karma_
+
+
+  ### License
+
+  *This software is licensed under the MIT license.*
+
+  Copyright (c) 2019 **_Lake Bramlett_**

@@ -27,11 +27,13 @@ $(document).ready(function () {
     } else if (user.age < 0) {
       $('.output').hide();
       $('.default').show();
+      $('p.nan').hide();
       $('p.future').show();
       $('.default span.try-again').text(user.age * -1);
     } else {
       $('.output').hide();
       $('.default').show();
+      $('p.future').hide();
       $('p.nan').show();
     }
   });
