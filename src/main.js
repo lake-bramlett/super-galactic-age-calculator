@@ -8,7 +8,8 @@ $(document).ready(function () {
     const dateOfBirth = $('.dob').val();
     const gender = $('.gender-select').val();
     const country = $('.country-select').val();
-    let user = new Person (dateOfBirth, gender, country);
+    const planet = $('.planet-select').val();
+    let user = new Person (dateOfBirth, planet, gender, country);
     user.getAge();
     $('.output').text(user.age);
   });
