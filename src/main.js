@@ -20,11 +20,11 @@ $(document).ready(function () {
       $('.output span.planet-age').text(user.age);
       $('.output span.life-expectancy').text(user.expectancy);
       if (user.expectancyOverUnder() === true) {
-        $('.output span.years-left').text(`${user.yearsRemaining} years left to live on `)
+        $('.output span.years-left').text(`${user.yearsRemaining} years left to live on `);
       } else {
-        $('.output span.years-left').text(`surpassed the life expectancy by ${user.yearsOver} years on `)
+        $('.output span.years-left').text(`surpassed the life expectancy by ${user.yearsOver} years on `);
       }
-    } else {
+    } else if (user.age < 0) {
       $('.output').hide();
       $('.default').show();
       $('.default span.try-again').text(user.age * -1);
