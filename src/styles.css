@@ -4,6 +4,7 @@ body {
   color: #ffffff;
   padding-top: 15%;
   background-image: url('./img/stars.jpg');
+  background-size: cover;
 }
 
 p {
